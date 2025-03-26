@@ -125,7 +125,7 @@
     fill: white;
   }
 
-  /* Change color of anchor on hover with smooth transition */
+  /* Change color of sidebar options on hover with smooth transition */
   .sidebar-options a:hover, .sidebar-settings a:hover {
     background-color: var(--green);
     border-radius: 32px 0 0 32px;
@@ -206,6 +206,17 @@
     align-items: center;
     color: black;
     font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Enlarge github profile and change color when hovering */
+  .top-bar .upper .profile a:hover {
+    transform: scale(1.05);
+    color: #81a969;
+  }
+
+  .top-bar .upper .profile a:hover svg {
+    fill: #81a969;
   }
 
   .top-bar .lower {
