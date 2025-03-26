@@ -230,6 +230,11 @@
   .top-bar .lower svg {
     height: clamp(60px, 6vw, 120px);
     fill: var(--green);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .top-bar .lower svg:hover {
+    transform: scale(1.1);
   }
 
   .top-bar .lower .welcome {
@@ -264,6 +269,11 @@
     font-size: clamp(1rem, 1vw, 1.2rem);
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .top-bar .lower .controls button:hover {
+    background-color: var(--brown);
   }
 
   .dashboard {
