@@ -78,6 +78,14 @@
     padding: 16px;
   }
 
+  .sidebar .logo:hover {
+    color: #81a969;
+  }
+
+  .sidebar .logo:hover svg {
+    fill: #81a969;
+  }
+
   .sidebar .logo svg{
     height: clamp(1rem, 5vw, 6rem);
     fill: white;
