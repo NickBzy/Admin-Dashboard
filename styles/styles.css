@@ -125,6 +125,7 @@
     fill: white;
   }
 
+  /* Change color of anchor on hover with smooth transition */
   .sidebar-options a:hover, .sidebar-settings a:hover {
     background-color: var(--green);
     border-radius: 32px 0 0 32px;
@@ -144,6 +145,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 0 20px;
   }
 
   .top-bar .upper .searchbar {
@@ -151,6 +153,7 @@
     display: flex;
     gap: 12px;
     align-items: center;
+    transition: transform 0.5s ease-in-out;
   }
 
   .top-bar .upper svg {
@@ -165,6 +168,10 @@
     background-color: var(--light-grey);
     border-radius: 16px;
     padding: 4px 10px;
+  }
+
+  .top-bar .upper .searchbar:hover {
+    transform: scale(1.05);
   }
 
   .top-bar .upper .profile {
