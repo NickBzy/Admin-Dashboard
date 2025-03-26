@@ -78,17 +78,18 @@
     padding: 16px;
   }
 
-  .sidebar .logo:hover {
-    color: #81a969;
-  }
-
-  .sidebar .logo:hover svg {
-    fill: #81a969;
-  }
-
   .sidebar .logo svg{
     height: clamp(1rem, 5vw, 6rem);
     fill: white;
+  }
+
+  /* Change color of logo on hover */
+  .sidebar .logo:hover {
+    color: var(--green);
+  }
+
+  .sidebar .logo:hover svg {
+    fill: var(--green);
   }
 
   .sidebar-options, .sidebar-settings {
@@ -113,6 +114,7 @@
     color: white;
     font-size: clamp(0.5rem, 1.5vw, 1.5rem);
     padding: 5px 0 5px 32px;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
   }
 
   .sidebar-options svg,
@@ -121,6 +123,11 @@
     display: inline;
     padding-right: 20px;
     fill: white;
+  }
+
+  .sidebar-options a:hover, .sidebar-settings a:hover {
+    background-color: var(--green);
+    border-radius: 32px 0 0 32px;
   }
 
   .top-bar {
