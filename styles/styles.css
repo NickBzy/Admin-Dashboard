@@ -55,7 +55,7 @@
     border-radius: 32px;
     border: 1px solid black;
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: 20vh 1fr / 1fr 4fr;
     grid-template-areas: 
     "sidebar topbar"
     "sidebar dashboard";
@@ -170,8 +170,10 @@
     background-color: var(--light-grey);
     border-radius: 16px;
     padding: 4px 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   }
 
+  /* Enlarge searchbox when hovered on */
   .top-bar .upper .searchbar:hover {
     transform: scale(1.05);
   }
@@ -312,6 +314,12 @@
     transition: transform 0.3s ease-in-out;
   }
 
+  .projects .project-item img {
+    border-radius: 16px;
+    margin-bottom: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+
   /* Enlarge projects tile when hovered on */
   .projects .project-item:hover {
     transform: scale(1.05);
@@ -321,6 +329,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 4px;
+  }
+
+  /* Change color of icons in project tile when hovered on */
+  .projects .project-item .icons svg:hover {
+    fill: gold;
   }
 
   .dashboard-right {
